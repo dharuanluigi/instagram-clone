@@ -68,8 +68,26 @@ div.body-feed-content img{
     height: 400px;
 }
 
+div.actions-icons, div.saved-area{
+    padding: 10px;
+}
+
 div.actions-icons img{
-    width: 20px;
+    width: 25px;
+    height: 25px;
+    margin-left: 8px;
+}
+
+div.saved-area img{
+    width: 30px;
+    height: 30px;
+}
+
+
+div.interactions ul li img{
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
 }
 
 
