@@ -21,17 +21,17 @@
     <header> <!--Starts header-->
         <div class="container">
             <div class="row justify-content-between align-items-center mt-2 mb-2 flex-nowrap">
-                <div class="">
+                <div class="logo-area">
                     <a href="index.html" class="navbar-brand">
                         <img src="../assets/icons/main-logo.png" alt="">
                     </a>
                 </div>
 
-                <div class="">
+                <div class="top-menu-search d-none d-md-block ">
                     <input type="search" name="main-search" id="main-search" placeholder="Search">
                 </div>
                 
-                <div class=""><!--Starts menu-->
+                <div class="top-menu"><!--Starts menu-->
                     <ul class="navbar nav top-menu-icons flex-nowrap"> 
                         <li class="navbar-item">
                             <a href="index.html" class="navbar-link">
@@ -59,7 +59,7 @@
 
                         <li class="navbar-item">
                             <a href="index.html" class="navbar-link">
-                                <img src="../assets/imgs/profile/author-profile.jpg" alt="profile-icon" class="img-fluid" id="profile-icon">
+                                <img src="../assets/imgs/profile/author-profile.jpg" alt="profile-icon" class="img-fluid profile-img">
                             </a>
                         </li>
                     </ul> 
@@ -68,133 +68,216 @@
         </div>
     </header> <!--End header-->
 
-    <section class="container"> <!--Starts top/side contents-->
-        <div class="row">
-            <div id="stories" class="col-lg-8 mt-4"> <!--Starts stories-->
-                <ul class="navbar nav d-flex flex-nowrap border-elements">
-                    <li class="navbar-item mt-2">
-                        <a href="" class="navbar-link">
-                            <img src="../assets/imgs/profile/author-profile.jpg" alt="">
-                        </a>
-                        <p class="stories-label">Your Story</p>
-                    </li>
-
-                    <li class="navbar-item mt-2">
-                        <a href="" class="navbar-link">
-                            <img src="../assets/imgs/profile/bia-profile.jpg" alt="">
-                        </a>
-                        <p class="stories-label">biamonteir0</p>
-                    </li>
-
-                    <li class="navbar-item mt-2">
-                        <a href="" class="navbar-link">
-                            <img src="../assets/imgs/profile/gabi-profile.jpg" alt="">
-                        </a>
-                        <p class="stories-label">gabi.lemes</p>
-                    </li>
-
-                    <li class="navbar-item mt-2">
-                        <a href="" class="navbar-link">
-                            <img src="../assets/imgs/profile/anderson-profile.jpg" alt="">
-                        </a>
-                        <p class="stories-label">andersonalves.a.m</p>
-                    </li>
-
-                    <li class="navbar-item mt-2">
-                        <a href="" class="navbar-link">
-                            <img src="../assets/imgs/profile/gustavo-profile.jpg" alt="">
-                        </a>
-                        <p class="stories-label">tavopimenta</p>
-                    </li>
-
-                    <li class="navbar-item mt-2">
-                        <a href="" class="navbar-link">
-                            <img src="../assets/imgs/profile/jhol-profile.jpg" alt="">
-                        </a>
-                        <p class="stories-label">lucas_jonatha</p>
-                    </li>
-
-                    <li class="navbar-item mt-2">
-                        <a href="" class="navbar-link">
-                            <img src="../assets/imgs/profile/felipe-profile.jpg" alt="">
-                        </a>
-                        <p class="stories-label">_fehsantoss</p>
-                    </li>
-                </ul>
-            </div><!--End Stories-->
-
-            <div class="col-lg-4 d-none d-lg-block"> <!--Starts suggest for me-->
-                <aside>
-                    Content
-                </aside>
-            </div> <!--End suggestion for me-->
-
-        </div>
-    </section> <!--End top/side contents-->
-
-    <section class="container"> <!--Starts feed content-->
-        <div class="row" id="feed">
-            <div class="col-lg-8 col-md-12 mt-4">
-                <div class="feed-content border-elements">
-                    <div class="header-feed-content d-flex justify-content-between">
-                        <div class="ml-2 mt-2 mr-2 mb-2">
+    <div class="container d-flex main-container">
+        <div class="container mt-4 container-feed col-7">
+            <div class="stories mb-4 border-elements"> <!--Starts stories-->
+                <ul class="d-flex">
+                    <li class="stories-list-profile">
+                        <div class="stories-profile">
                             <a href="#">
-                                <img src="../assets/imgs/profile/anderson-profile.jpg" alt="post-profile-image" class="mr-3">
-                                <span>anderson.a.m</span>
+                                <img src="../assets/imgs/profile/author-profile.jpg" alt="my-profile-on-stories" class="profile-img">
+                                <p class="stories-img-leg mt-2">Your profile</p>
                             </a>
                         </div>
-                        <i class="fas fa-ellipsis-h mt-3 mr-3"></i>
+                    </li>
+                    
+                    <li class="stories-list-profile">
+                        <div class="stories-profile">
+                            <a href="#">
+                                <img src="../assets/imgs/profile/bia-profile.jpg" alt="biamonteiro-profile-on-stories" class="profile-img">
+                                <p class="stories-img-leg mt-2">biamonteir0</p>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="stories-list-profile">
+                        <div class="stories-profile">
+                            <a href="#">
+                                <img src="../assets/imgs/profile/gabi-profile.jpg" alt="gabi.lemes-profile-on-stories" class="profile-img">
+                                <p class="stories-img-leg mt-2">gabi.lemes</p>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="stories-list-profile">
+                        <div class="stories-profile">
+                            <a href="#">
+                                <img src="../assets/imgs/profile/anderson-profile.jpg" alt="anderson-alves-profile-on-stories" class="profile-img">
+                                <p class="stories-img-leg mt-2">anderson.a.m</p>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="stories-list-profile">
+                        <div class="stories-profile">
+                            <a href="#">
+                                <img src="../assets/imgs/profile/gustavo-profile.jpg" alt="gustavo-profile-on-stories" class="profile-img">
+                                <p class="stories-img-leg mt-2">tavopimenta</p>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="stories-list-profile">
+                        <div class="stories-profile">
+                            <a href="#">
+                                <img src="../assets/imgs/profile/jhol-profile.jpg" alt="jhol-profile-on-stories" class="profile-img">
+                                <p class="stories-img-leg mt-2">lucas_jonatha</p>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="stories-list-profile">
+                        <div class="stories-profile">
+                            <a href="#">
+                                <img src="../assets/imgs/profile/felipe-profile.jpg" alt="felipe-profile-on-stories" class="profile-img">
+                                <p class="stories-img-leg mt-2">_fehsantoss</p>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div> <!--End stories-->
+
+            <div class="feed-content border-elements">
+                <div class="feed-content-posts">
+
+                    <div class="d-flex justify-content-between align-items-center post-header">
+                        <div class="post-profile">
+                            <div class="post-profile-img">
+                                <a href="#">
+                                    <img src="../assets/imgs/profile/anderson-profile.jpg" alt="anderson-profile-img" class="profile-img">
+                                </a>
+                                <a href="#">
+                                    <span class="post-profile-name ml-2">
+                                        <strong>
+                                            anderson.a.m
+                                        </strong>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="post-more-actions">
+                            <a href="#">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </a>
+                        </div>
+
                     </div>
 
-                    <div class="body-feed-content">
-                        <img src="https://source.unsplash.com/random/500x500" alt="post-image">
-                        <div class="body-post-interation-area">
-                            <div class="actions d-flex justify-content-between">
-                                <div class="actions-icons">
-                                    <a href="#"><img src="../assets/icons/like-icon.png" alt="like-icon"></a>
-                                    <a href="#"><img src="../assets/icons/comment-icon.png" alt="comment-icon"></a>
-                                    <a href="#"><img src="../assets/icons/direct-icon.png" alt="direct-icon"></a>
-                                    
-                                </div>
-                                <div class="saved-area">
-                                    <a href="#"><img src="../assets/icons/save-post-icon.png" alt="save-post-icon" id="save-opt"></a>
-                                </div>
-                            </div>
-
-                            <div class="interactions">
-                                <ul class="list-group">
-                                    <li class="list-group-item"><a href="#" class="navbar-link"><a href="#"><img src="../assets/imgs/profile/gabi-profile.jpg" alt="liked-image-profile"></a></a> Curtido por <strong>gabi.lemes</strong> e <strong>outras 4.789 pessoas</strong></li>
-
-                                    <li class="list-group-item">
-                                        <a href="#"><strong>anderson.a.m</strong></a>
-                                        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab corrupti numquam temporibus officia reprehenderit. Sint!</span> 
-                                        <a href="">#Loremipsum</a>
-                                    </li>
-
-                                    <li class="list-group-item">
-                                        <a href="">Ver todos os 2.090 comentários</a>
-                                    </li>
-
-                                    <li class="list-group-item">
-                                        <a href="#"><strong>luigidharuan</strong></a> <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni!</span>
-                                    </li>
-                                    
-                                    <li class="list-group-item">
-                                        <span>Há 1 dia</span>
-                                    </li>
-                                </ul>
-                            </div>
+                    <div class="post-body">
+                        <div class="post-content">
+                            <img src="https://source.unsplash.com/random/614x614" alt="post-img">
                         </div>
                     </div>
 
-                    <div class="footer-feed-content">
+                    <div class="post-footer">
+                        <div class="post-actions d-flex justify-content-between">
+                            <div class="post-first-actions">
+                                <a href="#">
+                                    <img src="../assets/icons/like-icon.png" alt="like-icon">
+                                </a>
+                                <a href="#">
+                                    <img src="../assets/icons/comment-icon.png" alt="commentary-icon">
+                                </a>
+                                <a href="#">
+                                    <img src="../assets/icons/direct-icon.png" alt="direct-icon">
+                                </a>
+                            </div>
 
-                    </div>
+                            <div class="post-save">
+                                <a href="#">
+                                    <img src="../assets/icons/save-post-icon.png" alt="save-post">
+                                </a>
+                            </div>
+                        </div> <!--end post actions-->
+
+                        <div class="post-interactions ml-3"> <!--Starts post interactions-->
+                            <div class="post-liked-by">
+                                <a href="#">
+                                    <img src="../assets/imgs/profile/gabi-profile.jpg" alt="gabi-profile" class="profile-img">
+                                </a>
+                                <span class="post-liked-by-desc">
+                                    Liked by <a href="#"><strong>gabi.lemes</strong></a> and 
+                                    <a href="#"><strong>other 4.564 people</strong></a>
+                                </span>
+                            </div>
+
+                            <div class="post-legend mt-2">
+                                <a href="#">
+                                    <strong>anderson.a.m</strong>
+                                </a>
+                                <span>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">#lorem</a>
+                                </span>
+                                <p class="post-view-all-comments mb-0">
+                                    <a href="#">
+                                        See all 890 comments
+                                    </a>
+                                </p>
+                            </div>
+
+                            <div class="post-show-comments mt-2">
+                                <ul class="list-comments">
+                                    <li class="list-comments-item d-flex justify-content-between">
+                                        <div class="list-comments-coments">
+                                            <a href="#">
+                                                <strong>luigidharuan</strong>
+                                            </a>
+                                            <span class="post-comment-message">Lorem ipsum dolor sit amet consectetur.</span>
+                                        </div>
+                                        <a href="#">
+                                            <i class="far fa-heart mr-2"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-comments-item d-flex justify-content-between">
+                                        <div class="list-comments-comments">
+                                            <a href="#">
+                                                <strong>gabi.lemes</strong>
+                                            </a>
+                                            <span class="post-comment-messsage">😂😂😂</span>
+                                        </div>
+                                        <a href="#">
+                                            <i class="fas fa-heart mr-2"></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="list-comments-item">
+                                        <p class="post-last-time-posted">
+                                            3 hours ago
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div><!--end show comments-->
+                        </div>
+
+                        <div class="post-comment line-red d-flex justify-content-between"> <!--Comments area-->
+                           
+                            <div class="post-comment-area line-blue">
+                                <textarea name="comments-section" cols="300" rows="1"></textarea>
+                           </div>
+
+                           <div class="post-comment-publish line-blue">
+                                <a href="#">
+                                    <span>
+                                        <strong>Publish</strong>
+                                    </span>
+                                </a>
+                           </div>
+                        </div><!--End comments area-->
+                    </div><!--End post footer-->
 
                 </div>
             </div>
+
         </div>
-    </section> <!--End feed content-->
+
+        <div class="container mt-4 d-none d-lg-block container-side line-blue">
+            <div class="side-content line-blue">
+                Side content
+            </div>
+        </div>
+    </div>
     
     <!--Bootstrap JS-->
     <script src="../js/bootstrap.min.js"></script>

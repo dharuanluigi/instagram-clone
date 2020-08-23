@@ -1,28 +1,29 @@
 
 *{
     Font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header{
     border-bottom: 1px solid #c4c4c4;
+    min-width: 440px;
 }
 
-/* Search input*/
+/* Main search input top menu */
 header input{
     border: 1px solid #c4c4c4;
     border-radius: 3px;
-    
 }
 
-/* Perfil icon style */
-.top-menu-icons li img#profile-icon{
+/*Global configs*/
+.main-container{
+    min-width: 440px;
+}
+
+/* profile perfil icon style */
+img.profile-img{
     border-radius: 50%;
-}
-
-/* Header styles and configurations */
-.top-menu-icons li img{
-    width: 23px;
-    margin: 0px 10px;
 }
 
 .border-elements{
@@ -30,71 +31,133 @@ header input{
     border-radius: 3px;
 }
 
-/* Stories styles */
+/*End global configs*/
 
-section div div#stories img{
-    width: 65px;
-    border-radius: 50%;
-    margin: 3px 0px 0px 13px;
+/* Header icon styles and configurations */
+.top-menu-icons li img{
+    width: 23px;
+    margin: 0px 10px;
+}
+/*************************************************/
+
+/*feed styles*/
+
+
+.container-side{
+    width: 500px;
 }
 
-section div div#stories p{
+.side-content{
+    position: fixed;
+}
+
+/*Stories styles*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.stories ul li{
+    padding: 8px;
     text-align: center;
-    font-size: 0.8em;
 }
 
-section div div#stories ul li{
-    width: 90px;
-    background: url("../assets/icons/stories-photo-circle.png") top center no-repeat;
-    background-size: 80%;
+.stories-profile img{
+    width: 50px;
+    position: relative;
+    top: 2px;
 }
 
-/* End stories style*/
-
-/* Feed styles  */
-
-div.header-feed-content img{
-    border-radius: 50%;
-    width: 30px;
+.stories-profile{
+    background: url("../assets/icons/stories-photo-circle.png") no-repeat top;
+    background-size: 55px;
 }
-div.header-feed-content div{
-    background: url("../assets/icons/stories-photo-circle.png") left center no-repeat;
-    background-size: 25%;
+
+.stories-img-leg{
+    margin: 0px;
+    padding: 0px;
+    font-size: 13px;
+}
+/**End stories*/
+/*************************************************/
+
+/*Post styles*/
+
+.post-header{
+    padding: 15px;
+}
+
+.post-profile img{
+    width: 35px;
+    position: relative;
+    right: 0.3em;
+}
+
+.post-profile-img{
+    background: url("../assets/icons/stories-photo-circle.png") no-repeat left;
+    background-size: 38px;
     padding: 5px;
 }
 
-div.body-feed-content img{
+.post-body img{
     width: 100%;
-    height: 400px;
 }
 
-div.actions-icons, div.saved-area{
-    padding: 10px;
-}
-
-div.actions-icons img{
+.post-first-actions img{
     width: 25px;
-    height: 25px;
-    margin-left: 8px;
+    margin: 15px 0px 15px 10px;
 }
 
-div.saved-area img{
-    width: 30px;
-    height: 30px;
+.post-save img{
+    width: 25px;
+    margin: 15px 10px 15px 0px;
 }
 
-
-div.interactions ul li img{
-   width: 20px;
-   height: 20px;
-   border-radius: 50%;
+.post-liked-by img{
+    width: 20px;
 }
 
+.post-liked-by-desc{
+    font-size: 0.9em;
+}
+
+.post-comment{
+    padding: 20px 10px;
+}
+
+.post-comment-area textarea{
+    width: 300px;
+}
+
+/*************************************************/
+
+/* Media controls */
+
+@media (min-width: 576px) { 
+    
+ }
+
+
+@media (min-width: 768px) { 
+    
+ }
+
+
+@media (min-width: 992px) { 
+    
+ }
+
+
+@media (min-width: 1200px) { 
+    
+ }
 
 /* Just a line to guide me along development */
 .line-red{
     border: 1px solid red;
 }
 
-
-
+.line-blue{
+    border: 1px solid blue;
+}
