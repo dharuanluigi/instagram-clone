@@ -5,9 +5,23 @@
     padding: 0;
 }
 
+a{
+    color: black;
+}
+
+body{
+    background-color: #FAFAFA;
+}
+
+a:hover{
+    color: black;
+    text-decoration: none;
+}
+
 header{
     border-bottom: 1px solid #c4c4c4;
     min-width: 440px;
+    background-color: #fff;
 }
 
 /* Main search input top menu */
@@ -16,9 +30,31 @@ header input{
     border-radius: 3px;
 }
 
+span#magnifier-search{
+    position: relative;
+    left: 120px;
+}
+
+span#magnifier-search img{
+    width: 12px;
+}
+
+header input:focus{
+    outline: none;
+}
+
 /*Global configs*/
-.main-container{
+.main-container, .container-feed, .feed-content{
     min-width: 440px;
+    background-color: #FAFAFA;
+}
+
+.top-menu-content{
+    width: 88%;
+}
+
+.feed-content-posts{
+    background-color: #fff;
 }
 
 /* profile perfil icon style */
@@ -61,17 +97,18 @@ ul{
 .stories ul li{
     padding: 8px;
     text-align: center;
-}
-
-.stories-profile img{
-    width: 50px;
-    position: relative;
-    top: 2px;
+    background-color: #fff;
 }
 
 .stories-profile{
-    background: url("../assets/icons/stories-photo-circle.png") no-repeat top;
+    background: url("../assets/icons/stories-photo-circle-thinck.png") no-repeat top;
     background-size: 55px;
+}
+
+.stories-profile img{
+    width: 48px;
+    position: relative;
+    top: 3px;
 }
 
 .stories-img-leg{
@@ -88,16 +125,16 @@ ul{
     padding: 15px;
 }
 
-.post-profile img{
-    width: 35px;
-    position: relative;
-    right: 0.3em;
-}
-
 .post-profile-img{
-    background: url("../assets/icons/stories-photo-circle.png") no-repeat left;
+    background: url("../assets/icons/stories-photo-circle-thinck.png") no-repeat left;
     background-size: 38px;
     padding: 5px;
+}
+
+.post-profile img{
+    width: 32px;
+    position: relative;
+    right: 3px;
 }
 
 .post-body img{
@@ -145,6 +182,24 @@ ul{
 .post-comment-area textarea:focus{
     outline: none;
 }
+
+.post-comment-publish a{
+    color: #45B1F7;
+    opacity: 0.5;
+}
+
+.hashtag{
+    color: #45B1F7;
+}
+
+.hashtag:hover{
+    color: #45B1F7;
+}
+
+.post-view-all-comments a, .post-last-time-posted{
+    color: #c4c4c4;
+}
+
 /**End feed style**/
 /*************************************************/
 
@@ -155,35 +210,35 @@ ul{
 }
 
 .side-content{
-    width: 450px;
+    width: 300px;
 }
 
 .side-profile-img{
-    background: url("../assets/icons/stories-photo-circle.png") no-repeat left;
+    background: url("../assets/icons/stories-photo-circle-thinck.png") no-repeat left;
     background-size: 55px;
     width: 60px;
     height: 60px;
 }
 
 .side-profile-img img{
-    width: 50px;
+    width: 48px;
     position: relative;
-    left: 3px;
+    left: 4px;
     top: 5px;
 }
 
-.suggestion-follow img{
-    width: 35px;
-    position: relative;
-    left: 3px;
-    top: 3px;
-}
-
 .side-profile-suggestion-img-on-stories{
-    background: url("../assets/icons/stories-photo-circle.png") no-repeat left top;
+    background: url("../assets/icons/stories-photo-circle-thinck.png") no-repeat left top;
     background-size: 40px;
     width: 50px;
     height: 50px;
+}
+
+.suggestion-follow img{
+    width: 34px;
+    position: relative;
+    left: 2.6px;
+    top: 2.6px;
 }
 
 .side-profile-suggestion-img-off-stories{
@@ -197,15 +252,49 @@ ul{
 }
 
 .footer-side-content ul li{
-    font-size: 12px;
+    font-size: 0.7em;
+    letter-spacing: 0.5px;
     margin-right: 8px;
+}
+
+.footer-side-content a{
+    color: #c4c4c4;
+}
+
+.copyright{
+    font-size: 0.7em;
+    text-transform: uppercase;
+    color: #c4c4c4;
 }
 
 .dot-icon-footer{
     background: url("../assets/icons/dot-footer.png") no-repeat left center;
+    opacity: 0.2;
 }
 
+#sub-side-profile-content{
+    font-size: 0.8em;
+}
 
+h6{
+    color: #9b9b9b;
+    font-weight: bold;
+}
+
+.side-profile-desc{
+    font-size: 0.8em;
+    color: #9b9b9b;
+}
+
+.side-profile-desc p{
+    margin-bottom: 5px;
+}
+
+.follow-btn a{
+    color: #45B1F7;
+    font-weight: bold;
+    font-size: 0.8em;
+}
 /*************************************************/
 
 /* Media controls */

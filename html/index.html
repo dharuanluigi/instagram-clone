@@ -18,17 +18,21 @@
 
 </head>
 <body>
-    <header> <!--Starts header-->
+    <header class="pt-3"> <!--Starts header-->
         <div class="container">
-            <div class="row justify-content-between align-items-center mt-2 mb-2 flex-nowrap">
+            <div class="row justify-content-between align-items-center ml-2 mb-2 flex-nowrap top-menu-content">
                 <div class="logo-area">
                     <a href="index.html" class="navbar-brand">
                         <img src="../assets/icons/main-logo.png" alt="">
                     </a>
                 </div>
 
-                <div class="top-menu-search d-none d-md-block ">
-                    <input type="search" name="main-search" id="main-search" placeholder="Search">
+                <div class="top-menu-search d-none d-md-block">
+                    <span id="magnifier-search">
+                        <img src="../assets/icons/magnifying-glass-icon-gray.png" alt="search">
+                        Search
+                    </span>
+                    <input type="search" name="main-search" id="main-search">
                 </div>
                 
                 <div class="top-menu"><!--Starts menu-->
@@ -206,7 +210,7 @@
                                     <strong>anderson.a.m</strong>
                                 </a>
                                 <span>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#">#lorem</a>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" class="hashtag">#lorem</a>
                                 </span>
                                 <p class="post-view-all-comments mb-0">
                                     <a href="#">
@@ -1044,7 +1048,7 @@
 
         </div>
 
-        <div class="container mt-4 d-none d-lg-block container-side">
+        <div class="container mt-4 d-none d-lg-block container-side"> <!--Starts side contents-->
             <div class="side-content">
                 <div class="side-hearder-content d-flex align-items-center">
                    <div class="side-profile-img">
@@ -1055,7 +1059,7 @@
                             <strong>luigidharuan</strong>
                         </a>
                         <br>
-                        <span>luigidharuan</span>
+                        <span id="sub-side-profile-content">luigidharuan</span>
                    </div>
                </div>
 
